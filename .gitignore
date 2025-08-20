@@ -1,0 +1,65 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp*
+!/tmp/.keep
+
+# Ignore database.
+/storage/*.sqlite3
+/storage/*.sqlite3-journal
+/db/*.sqlite3*
+/db/*.sqlite3-journal
+/db/schema.rb
+/db/structure.sql
+
+# Ignore credentials and secrets.
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore node modules and yarn files.
+/node_modules
+/yarn-error.log
+
+# Ignore precompiled assets and build artifacts.
+/public/assets
+/public/packs
+/public/packs-test
+/public/packs-dev
+/public/assets-manifest.json
+/public/packs-manifest.json
+
+# Ignore byebug command history file.
+.byebug_history
+
+# Ignore dotenv environment variable files.
+.env
+.env.*
+
+# Ignore macOS system files.
+.DS_Store
+
+# Ignore editor swap/backup files.
+*~
+*.swp
+*.swo
+
+# Ignore coverage reports.
+/coverage/
+
+# Ignore test and spec temp files.
+/spec/examples.txt
+
+# Ignore RuboCop and Solargraph config.
+/.rubocop-*
+/.solargraph.yml
+
+# Ignore Docker files if present.
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignore VSCode settings.
+.vscode/

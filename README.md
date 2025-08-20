@@ -1,22 +1,26 @@
 # Rails Routes Lab
 
-Welcome to the Rails Routes Practice Lab! This is a Rails 8.0.2.1 app using Ruby 3.4.5.
+Welcome to the Rails Routes Practice Lab!
 
 ## Setup Instructions
 
 1. **Install dependencies:**
-	```sh
-	bundle install
-	```
+
+   ```sh
+   bundle install
+   ```
 2. **Run the server:**
-	```sh
-	bin/rails server
-	```
-	Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+   ```sh
+   bin/rails server
+   ```
+
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 3. **Run the test suite:**
-	```sh
-	bundle exec rspec
-	```
+
+   ```sh
+   bundle exec rspec
+   ```
 
 ## Your Task
 
@@ -26,18 +30,23 @@ Welcome to the Rails Routes Practice Lab! This is a Rails 8.0.2.1 app using Ruby
 
 ## Example Steps
 
+
+## Example Steps
+
 1. Generate the controller:
-	```sh
-	bin/rails generate controller Pages about contact
-	```
+   ```sh
+   bin/rails generate controller Pages about contact
+   ```
 2. Add routes in `config/routes.rb`:
-	```ruby
-	get "/about", to: "pages#about"
-	get "/contact", to: "pages#contact"
-	```
+   ```ruby
+   get "/about", to: "pages#about"
+   get "/contact", to: "pages#contact"
+   ```
 3. Edit the views:
-	- `app/views/pages/about.html.erb`: `About Page`
-	- `app/views/pages/contact.html.erb`: `Contact Page`
+   - `app/views/pages/about.html.erb`: `About Page`
+   - `app/views/pages/contact.html.erb`: `Contact Page`
+
+**Do not use `scaffold` for this lab.**
 
 ## RSpec Test
 
@@ -46,27 +55,3 @@ Tests are provided to check that `/about` and `/contact` return 200 and the corr
 ---
 
 Happy coding!
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
